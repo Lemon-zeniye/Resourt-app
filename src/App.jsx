@@ -1,5 +1,4 @@
-import { useState } from "react";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import Header from "./component/Header";
 import Home from "./component/Home";
 import RoomHolder from "./component/RoomHolder";

@@ -3,7 +3,7 @@ import Rooms from "./Rooms";
 import {DataContext} from "./DataContext";
 
 const FeaturedRooms = () => {
-    const [datas, setDatas] = useContext(DataContext);
+    const [datas] = useContext(DataContext);
    
 
     return(
@@ -17,7 +17,7 @@ const FeaturedRooms = () => {
                 datas.map(data=> {
                     const {sys, fields} = data;
                     if(fields.featured === true){
-                       return  <Rooms key={sys.id} data={data}/>
+                       return <Rooms key={sys.id} data={data}/>
                     }
                 })
             }

@@ -10,7 +10,7 @@ const RoomsDetail = ({match}) => {
              datas.map(data => {
                 const  {sys, fields} = data;    
                 if(id === sys.id){
-                    return <RoomDetail fields={fields} />
+                  return  (<RoomDetail fields={fields} />)
                 }
               })
          }

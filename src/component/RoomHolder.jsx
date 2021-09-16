@@ -2,11 +2,11 @@ import { useContext, useState, useEffect } from "react";
 import { DataContext } from "./DataContext";
 import Rooms from "./Rooms";
 const RoomHolder = () => {
-    const [datas, setDatas] = useContext(DataContext);
+    const [datas] = useContext(DataContext);
     const [filterData, setFilterData] = useState(datas);
     const [status, setStatus] = useState("all");
 
-    const {sys, fields} = datas[0];
+    const {fields} = datas[0];
     const [img1] = fields.images;
 
     const filterOne = () => {
@@ -31,11 +31,14 @@ const RoomHolder = () => {
                     datas.map(data => data)
                 )
             break;
+            default :
+                console.log("there is an error");
+            break;
 
         }
     }
     useEffect(() => {
-        filterOne();
+        filterOne()
     }, [status])
  
  
