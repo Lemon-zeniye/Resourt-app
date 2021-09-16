@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    padding: 15px;
+    color: black;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(220, 254, 255);
+    box-shadow: 1px 1px 5px gray;
+    z-index: 1;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.nav div {
+    display: flex;
+    margin-right: 3rem;
+}
+.nav h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 3rem;
+    text-decoration: underline;
+}
+nav li {
+    margin-left: 35px;
+    text-decoration: none;
+    font-size: large;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav li:hover {
+    color:rgb(168, 163, 163);
+}
+.home-page {
+    background-image: url("./51.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3.3rem;
+
+}
+.upper-page {
+    width: 600px;
+    height: 250px;
+    background-color: rgba(14, 14, 14, 0.5);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper-page hr {
+    width: 60px;
+    margin: 10px;
+    border-color: pink;
+
+}
+.upper-page p {
+    font-size: x-large;
+    color: white
+}
+.upper-page .title {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.upper-page button {
+    margin-top: 15px;
+    padding: 11px;
+    background-color: rgba(7, 7, 7, 0.7);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.servicelist {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.service {
+    width: 200px;
+    text-align: center;
+
+}
+.service span {
+    font-size: x-large;
+    color: rgb(109, 78, 83);
+}
+.service h3 {
+    margin: 5px;
+    font-family:cursive;
+    font-size: medium;
+}
+.service p {
+    margin: 9px;
+}
+.service-bit2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-big h1 {
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.service-big hr {
+    width: 70px;
+    margin-bottom: 17px;
+    border-color: pink;
+}
+.service-big {
+    padding-bottom: 100px;
+}
+.featured-room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featured-room hr {
+    width: 70px;
+    margin-top: 3rem;
+    border-color: pink;
+}
+
+
+.rooms p {
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    padding: 5px;
+    color: white;
+    border-radius: 0 0 10px 0;
+    margin-bottom: .3rem;
+}
+.rooms .title-img {
+    background-color: rgb(168, 163, 163);
+    text-align: center;
+    font-size: medium;
+    padding: 5px;
+    font-family:cursive;
+    color: purple;
+    margin: 0;
+    margin-bottom: .3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.rooms {
+    position: relative;
+    margin: .7rem;
+    box-shadow: 1px 1px 4px gray;
+}
+.rooms img {
+    width: 280px;
+    height: 185px;
+}
+.rooms img:hover {
+    opacity: 0.6;
+}
+.big-rooms {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5% 15%;
+}
+.imgdetail {
+    height: 550px;
+    width: 100%;
+}
+.detailroomname{
+    position:absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: lightgray;
+    padding: 40px;
+    opacity: .7;
+
+}
+.I-container{
+    padding-top: 3.33rem;
+}
+.detailroomname p {
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgb(92, 91, 91);
+}
+
+.container-detail {
+    margin: 4rem 7rem;
+}
+
+.detail-image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.detail-image-container img {
+    width: 300px;
+    height: 200px;
+    margin: .7rem;
+}
+.container-detail .detail-container {
+    display: flex;
+    margin-top: 2rem;
+}
+.detail-container .detail-des {
+    flex: 1;
+}
+.detail-container .detail-info {
+    flex: 1;
+    margin-left: 4rem;
+}
+.detail-des h1 {
+    margin-bottom: 1rem;
+}
+.detail-des p {
+    line-height: 1.5;
+}
+.detail-info h1{
+    margin-bottom: 1rem;
+}
+.detail-info li {
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.extra {
+    margin: 1rem 0;
+}
+.extra h2{
+    margin-bottom: 1rem;
+}
+.extra li {
+    list-style: circle;
+    margin-bottom: .3rem;
+}
+
+/*************** Rooms Holder******************** */
+
+.room-rooms {
+    display: flex;
+    align-items: center;
+    margin: 5% 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.room-one {
+    margin: 0 1rem;
+}
+.search-room {
+    margin-top: 4rem;
+}
+.filter {
+    margin-left: 5rem;
+}
+.filter h3 {
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.filter select {
+    width: 7rem;
+    margin-top: .5rem;
+    border-color: purple;
+    border-radius: .2rem;
+}
+
+@media(max-width: 800px){
+    * {
+        overflow-x: hidden;
+    }
+    .nav {
+        padding: 10px;
+    }
+    .nav div {
+        margin: 0;
+    }
+    .nav li {
+        margin: .3rem;
+    }
+    .nav h1 {
+        font-size: 25px;
+        margin-left: 1rem;
+    }
+    .upper-page {
+        width: 350px;
+        height: 150px;
+        max-width: 100%;
+    }
+    .upper-page p {
+        font-size: large;
+    }
+    .upper-page .title {
+        font-size: 30px;
+    }
+    .detailroomname{
+        top: 30%;
+        padding: 10px;    
+    }
+    .detailroomname p {
+        font-size: 35px;
+        text-align: center;
+    }
+    .imgdetail {
+        height: 350px ;
+    }
+    .detail-image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container-detail {
+        margin: 4rem 3rem;
+    }
+    .detail-container {
+        flex-direction: column;
+    }
+    .detail-container .detail-info {
+        margin-top: 1rem;
+        margin-left: 0;
+    } 
+    
+}

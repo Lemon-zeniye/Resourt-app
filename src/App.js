@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Header from "./component/Header";
+import Home from "./component/Home";
+import RoomHolder from "./component/RoomHolder";
+import RoomsDetail from "./component/RoomsDetail";
+import "./myApp.css";
+import { DataProvider } from "./component/DataContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  return(
+    <div>
+      <DataProvider>
+        <Router>
+          <Header />
+          <Route path="/" exact component={Home} /> 
+          <Route path="/rooms" exact component={RoomHolder} />
+          <Route path="/rooms/:id" component={RoomsDetail} />
+        </Router>
+      </DataProvider>
     </div>
-  );
+  )
 }
-
 export default App;
