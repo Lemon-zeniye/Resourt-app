@@ -9,6 +9,8 @@ const RoomHolder = () => {
     const {fields} = datas[0];
     const [img1] = fields.images;
 
+    
+    useEffect(() => {
     const filterOne = () => {
         switch(status) {
              case "double" :
@@ -37,9 +39,8 @@ const RoomHolder = () => {
 
         }
     }
-    useEffect(() => {
-        filterOne()
-    }, [status])
+        filterOne();
+    }, [datas, status])
  
  
     return (

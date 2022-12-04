@@ -14,10 +14,12 @@ const FeaturedRooms = () => {
             </div>
             <div className="big-rooms" >
             {
-                datas.map(data=> {
+                datas.map(data => {
                     const {sys, fields} = data;
                     if(fields.featured === true){
                        return <Rooms key={sys.id} data={data}/>
+                    }else{
+                        return <></>;
                     }
                 })
             }

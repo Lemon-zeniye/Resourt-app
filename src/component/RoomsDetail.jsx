@@ -11,6 +11,8 @@ const RoomsDetail = ({match}) => {
                 const  {sys, fields} = data;    
                 if(id === sys.id){
                   return  (<RoomDetail fields={fields} />)
+                }else{
+                     return <></>
                 }
               })
          }
