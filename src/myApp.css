@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
 }
 .nav {
     display: flex;
@@ -20,19 +23,19 @@
     margin-right: 3rem;
 }
 .nav h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
     margin-left: 3rem;
-    text-decoration: underline;
+    color: rgb(27, 27, 69);
+
 }
 nav li {
     margin-left: 35px;
     text-decoration: none;
     font-size: large;
     list-style: none;
-    color: black;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 27, 69);
+    font-family: 'Noto Sans', sans-serif;
 }
 nav li:hover {
     color:rgb(168, 163, 163);
@@ -156,8 +159,9 @@ nav li:hover {
     padding: 5px;
     font-family:cursive;
     color: purple;
+    border-radius: 0 0 .2rem 0;
     margin: 0;
-    margin-bottom: .3rem;
+    /* margin-bottom: .3rem; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -166,14 +170,21 @@ nav li:hover {
 .rooms {
     position: relative;
     margin: .7rem;
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 4px 4px 15px 1px rgb(213, 213, 213);
+    transition: scale .7s ease;
+    height: 185px;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+.rooms:hover{
+    scale: 1.1;
 }
 .rooms img {
     width: 280px;
     height: 185px;
-}
-.rooms img:hover {
-    opacity: 0.6;
+    object-fit: fill;
+    border-radius: .3rem;
+
 }
 .big-rooms {
     display: flex;
@@ -269,17 +280,30 @@ nav li:hover {
     margin-top: 4rem;
 }
 .filter {
-    margin-left: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.filter h3 {
-    color: purple;
-    font-family: Arial, Helvetica, sans-serif;
+.filter h4 {
+    color: black;
+    margin-top: .3rem;
 }
 .filter select {
-    width: 7rem;
+    width: 7.5rem;
     margin-top: .5rem;
-    border-color: purple;
+    padding: .4rem .7rem;
     border-radius: .2rem;
+    font-family: inherit;
+    border: none;
+    background-color: rgb(223, 175, 235);
+    outline: none;
+    color: black;
+}
+.filter select option{
+    font-family: inherit;
+    background-color: white;;
 }
 
 @media(max-width: 800px){
@@ -336,18 +360,8 @@ nav li:hover {
         margin-top: 1rem;
         margin-left: 0;
     } 
-    .rooms img {
-        width: 200px;
-        height: 170px;
-    }
     .big-rooms{
         margin: 5%;
     }
     
-}
-@media(max-width: 600px){
-    .rooms img {
-        width: 180px;
-        height: 150px;
-    }
 }

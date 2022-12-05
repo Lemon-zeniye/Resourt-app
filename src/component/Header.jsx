@@ -5,15 +5,15 @@ const Header = () => {
                 <div className="nav">
                     <h1>Beach Resort</h1>
                     <div>
-                        <Link to="/">
+                        <Link style={{textDecoration: 'none' }} to="/">
                             <li>Home</li>
                         </Link>
-                        <Link to="/rooms">
+                        <Link style={{textDecoration: 'none' }} to="/rooms">
                             <li>Roomes</li>
                         </Link>
                     </div>
                 </div>
-            </nav>
+            </nav>  
     )
 }
 export default Header;

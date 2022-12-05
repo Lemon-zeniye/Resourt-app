@@ -57,7 +57,7 @@ const RoomHolder = () => {
                     <hr />
                 </div>
                 <div className="filter">
-                    <h3>Room Type</h3>
+                    <h4>Room Type</h4>
                     <select onChange={(e) => setStatus(e.target.value)}>
                         <option value="all">All</option>
                         <option value="family">Family</option>
